@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Mathivaanan and Shwetha//Wedding Reception Invitation//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:reception-20261123@mathivaanan-shwetha-wedding
+DTSTAMP:20261026T000000Z
+DTSTART:20261123T123000Z
+DTEND:20261123T153000Z
+SUMMARY:Mathivaanan and Shwetha — Wedding Reception
+LOCATION:S.M.R. Thirumana Mandapam\, G.N. Mills\, Subramaniampalayam\, Coimbatore 641029
+DESCRIPTION:Wedding reception from 6 PM to 9 PM IST.
+END:VEVENT
+END:VCALENDAR

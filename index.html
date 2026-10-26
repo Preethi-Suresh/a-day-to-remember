@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f9e9ee">
+  <meta name="description" content="Celebrate the wedding reception of S. Mathivaanan and Dr. M.M. Shwetha. Monday, 23 November 2026, 6–9 PM. S.M.R. Thirumana Mandapam, G.N. Mills, Coimbatore.">
+  <title>SM • Mathivaanan and Shwetha</title>
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cormorant+Garamond:wght@400;500;600&family=Pinyon+Script&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <!-- The complete invitation stays available if JavaScript is disabled. -->
+  <section class="opening" id="opening" tabindex="-1" aria-label="Open your wedding reception invitation" hidden>
+    <div class="opening-inner">
+      <div class="opening-copy">
+        <p class="eyebrow">Wedding reception invitation</p>
+        <div class="opening-monogram" aria-label="S M">SM</div>
+        <p class="opening-names">Mathivaanan<br><span>with</span><br>Shwetha</p>
+        <p class="opening-date">Monday, 23 November 2026</p>
+        <p class="opening-note">Two hearts, one promise,<br>and a place kept just for you.</p>
+      </div>
+      <div class="envelope-column">
+        <div class="envelope-frame">
+          <video id="envelopeVideo" class="envelope-video" playsinline muted preload="metadata" poster="assets/images/envelope.jpg" aria-hidden="true">
+            <source src="assets/media/envelope.mp4" type="video/mp4">
+          </video>
+          <button class="seal-button" id="openEnvelope" aria-label="Open invitation" aria-describedby="openText"></button>
+        </div>
+        <button class="open-text" id="openText" type="button">Something beautiful is waiting inside.<span>Tap the seal to open.</span></button>
+      </div>
+    </div>
+  </section>
+
+  <a class="skip-link" href="#celebrations">Skip to event details</a>
+  <main id="invitation" tabindex="-1">
+    <header class="page-header"><a class="brand" href="#home" aria-label="SM invitation, back to top">SM</a><span>23 November 2026</span><a href="#celebrations">The reception</a></header>
+    <section class="hero section" id="home">
+      <img class="ganesha" src="assets/images/ganesha.webp" alt="Lord Ganesha" width="96" height="96">
+      <p class="tamil-heading" lang="ta">திருமண வரவேற்பு அழைப்பிதழ்</p>
+      <blockquote class="kural" lang="ta"><p>அன்பும் அறனும் உடைத்தாயின் இல்வாழ்க்கை<br>பண்பும் பயனும் அது.</p><cite>திருக்குறள் 45</cite></blockquote>
+      <p class="invite-copy">Wrapped in the blessings and love of our families</p>
+      <div class="parents">
+        <p>Mr. K. Shanmugasundaram &amp; Mrs. S. Tamilselvi<span>Ganapathy, Coimbatore</span></p>
+        <p class="parents-join">and</p>
+        <p>Mr. M. Murugananthan @ Durai &amp; Mrs. M. Deepa<span>Thekkupalayam, Coimbatore</span></p>
+      </div>
+      <p class="invite-copy">as two paths gently become one,<br>we invite you and your loved ones<br>to share in the joy of our wedding reception</p>
+      <h1 class="couple-names"><span class="person">S. Mathivaanan<small>B.Tech. · Arcturus Life Space, Saibaba Colony, Coimbatore</small></span><span class="join-word">with</span><span class="person">Dr. M.M. Shwetha<small>BDS · M.S. Dental Clinic, G.N. Mills, Coimbatore</small></span></h1>
+      <a class="text-link" href="#date">Discover the date <span aria-hidden="true">⌄</span></a>
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="peacock-window peacock-left" aria-hidden="true"><img src="assets/images/peacock.webp" alt="" width="360" height="360"></div>
+      <div class="peacock-window peacock-right" aria-hidden="true"><img src="assets/images/peacock.webp" alt="" width="360" height="360"></div>
+    </section>
+
+    <section class="section date-section" id="date">
+      <div class="section-heading reveal"><h2>Save the Date</h2><p>One evening to cherish, a lifetime to share.</p><p>Tap each card to unveil the day.</p></div>
+      <div class="date-cards reveal" aria-label="Reception date">
+        <button class="date-card" data-value="November" aria-label="Reveal reception month"><span class="date-value"><small>Month</small><strong>November</strong></span><span class="date-cover" aria-hidden="true"><span>Month</span><small>Tap to reveal</small></span></button>
+        <button class="date-card" data-value="23" aria-label="Reveal reception day"><span class="date-value"><small>Day</small><strong>23</strong></span><span class="date-cover" aria-hidden="true"><span>Day</span><small>Tap to reveal</small></span></button>
+        <button class="date-card" data-value="2026" aria-label="Reveal reception year"><span class="date-value"><small>Year</small><strong>2026</strong></span><span class="date-cover" aria-hidden="true"><span>Year</span><small>Tap to reveal</small></span></button>
+      </div>
+      <p class="reveal-message" id="dateMessage" role="status"></p>
+      <p class="countdown-caption" id="countdownCaption">Every passing moment brings us closer to forever.</p>
+      <div class="countdown" id="countdown" aria-label="Time remaining until the reception">
+        <div><strong id="days">—</strong><span>Days</span></div><div><strong id="hours">—</strong><span>Hours</span></div><div><strong id="minutes">—</strong><span>Minutes</span></div><div><strong id="seconds">—</strong><span>Seconds</span></div>
+      </div>
+    </section>
+
+    <section class="section celebrations" id="celebrations">
+      <div class="section-heading reveal"><h2>The Wedding Reception</h2><p>Two families, one celebration,<br>and a seat waiting just for you.</p></div>
+      <div class="event-grid event-grid--single">
+        <article class="event-card reveal">
+          <div class="event-details"><p class="eyebrow">Monday · 23 November 2026</p><h3>Reception</h3><p class="event-time">6:00 – 9:00 PM</p><p class="event-description">Come bless our beginning with your smile,<br>and stay to celebrate the night with us.</p><p class="venue">S.M.R. Thirumana Mandapam<span>G.N. Mills, Subramaniampalayam,<br>Coimbatore – 641 029</span></p><div class="event-actions"><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=S.M.R.%20Thirumana%20Mandapam%2C%20Subramaniampalayam%2C%20Coimbatore" target="_blank" rel="noopener noreferrer">View on map</a><a class="calendar-link" href="assets/calendar/reception.ics" download="SM-Reception.ics">Add to calendar</a></div></div>
+        </article>
+      </div>
+    </section>
+    <section class="section closing reveal"><p class="eyebrow">With Love and Gratitude</p><h2>Some moments become memories<br>because of the people who share them.</h2><p>We look forward to celebrating ours with you.</p><div class="closing-monogram" aria-label="S M">SM</div></section>
+    <footer>With love,<br>Mathivaanan, Shwetha<br>and our families</footer>
+  </main>
+  <div class="flower-rain" id="flowerRain" aria-hidden="true"></div>
+  <audio id="music" src="assets/media/music.mp3" loop preload="none"></audio>
+  <button class="music-button" id="musicToggle" aria-label="Play background music" aria-pressed="false" hidden><span aria-hidden="true">♫</span><span id="musicLabel">Music off</span></button>
+</body>
+</html>
