@@ -92,6 +92,9 @@ h3{font-size:3.8rem}.parents .parents-join{font-size:2.2rem}
 /* Gold vine border down the left edge, as on the printed card. */
 .opening::before,.hero::before,.closing::before{content:'';position:absolute;top:0;bottom:0;left:4px;width:26px;z-index:1;pointer-events:none;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='112'%3E%3Cg fill='none' stroke='%23c8922e' stroke-width='2.2'%3E%3Cpath d='M10 0c-8 7-8 21 0 28s8 21 0 28-8 21 0 28 8 21 0 28'/%3E%3Cpath d='M10 0c8 7 8 21 0 28s-8 21 0 28 8 21 0 28-8 21 0 28'/%3E%3Cpath d='M15 56c6-8 16-9 23-1-6 8-17 8-23 1z'/%3E%3C/g%3E%3Cg fill='%23c8922e'%3E%3Ccircle cx='10' cy='14' r='1.6'/%3E%3Ccircle cx='10' cy='42' r='1.6'/%3E%3Ccircle cx='10' cy='70' r='1.6'/%3E%3Ccircle cx='10' cy='98' r='1.6'/%3E%3Ccircle cx='27' cy='56' r='1.6'/%3E%3C/g%3E%3C/svg%3E") repeat-y 0 0/26px 73px}
 .closing{position:relative;padding-bottom:120px}
+/* Keep each parent's full name together; on a phone the line breaks between the two names. */
+.parents p .nb{display:inline;white-space:nowrap;font:inherit;color:inherit;font-style:normal}
+@media(max-width:699px){.parents p{font-size:1.15rem}}
 /* Couple portrait on the reception card: a slow drift and a passing glow of light. */
 .event-portrait{aspect-ratio:4/5;background:var(--pink)}
 .event-portrait img{object-fit:cover;object-position:50% 30%;transform-origin:52% 32%;animation:portrait-drift 18s ease-in-out infinite alternate}
